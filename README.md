@@ -42,3 +42,10 @@ The trade-off: we work on an explicit, already-built graph rather than parsing f
 ```
 node --test
 ```
+
+## Performance
+
+The window keeps a bounded buffer, so `push` is constant time and memory does not
+grow with the length of the stream. `peak` and `trough` are linear in the window
+size, which is the trade that keeps `push` cheap.
+
