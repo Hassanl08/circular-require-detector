@@ -1,6 +1,6 @@
 {
   "name": "circular-require-detector",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "Finds circular dependencies in a module graph and returns each cycle as a path of module ids",
   "type": "module",
   "main": "src/index.js",
